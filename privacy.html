@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Prepp</title>
+<style>
+  :root {
+    --bg: #F5F0E8;
+    --text: #4A5E45;
+    --accent: #8FAF8A;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: var(--accent);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+  }
+
+  header p {
+    margin: 0.5rem 0 0;
+    color: #FFFFFF;
+    font-size: 1rem;
+    opacity: 0.95;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  section {
+    margin-bottom: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: var(--text);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+
+  ul {
+    margin: 0.5rem 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 2px;
+  }
+
+  a:hover {
+    color: var(--accent);
+  }
+
+  .intro-note {
+    background-color: rgba(143, 175, 138, 0.15);
+    border-left: 4px solid var(--accent);
+    padding: 0.9rem 1rem;
+    border-radius: 4px;
+    margin-top: 0.75rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1.5rem 2.5rem;
+    font-size: 0.875rem;
+    color: var(--text);
+    opacity: 0.75;
+    border-top: 1px solid rgba(74, 94, 69, 0.15);
+    margin-top: 1rem;
+  }
+
+  footer p {
+    margin: 0.25rem 0;
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.6rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+    }
+
+    main {
+      padding: 1.5rem 1rem 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Prepp</h1>
+  <p>Privacy Policy</p>
+</header>
+
+<main>
+
+  <section id="introduction">
+    <h2>1. Introduction</h2>
+    <p>
+      Prepp is a personal health journaling tool designed to help you prepare for doctor
+      appointments by organizing your health notes, symptoms, and questions in one place.
+    </p>
+    <div class="intro-note">
+      <p>
+        Prepp is <strong>not</strong> a medical provider and is <strong>not</strong> a HIPAA
+        covered entity. Prepp is not a substitute for professional medical advice, diagnosis,
+        or treatment. Always seek the guidance of a qualified healthcare provider with any
+        questions you may have regarding a medical condition.
+      </p>
+    </div>
+  </section>
+
+  <section id="data-we-collect">
+    <h2>2. Data We Collect</h2>
+    <ul>
+      <li><strong>Email address</strong> — collected via Firebase Authentication (Google) when you create an account.</li>
+      <li><strong>Health journal entries</strong> — logged by you and stored locally on your device.</li>
+      <li><strong>Device identifier</strong> — used for AI usage tracking (e.g., rate limiting AI feature requests).</li>
+      <li><strong>Voice/audio data</strong> — temporarily processed when you use voice logging; this audio is not stored.</li>
+    </ul>
+  </section>
+
+  <section id="third-party-services">
+    <h2>3. Third Party Services</h2>
+    <p>Prepp relies on the following third-party services to operate:</p>
+    <ul>
+      <li>
+        <strong>Firebase (Google)</strong> — used for authentication. See
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.
+      </li>
+      <li>
+        <strong>Anthropic API</strong> — used to generate AI-powered summaries and visit
+        agendas. When you use these AI features, the relevant health entry text is sent to
+        Anthropic for processing.
+      </li>
+    </ul>
+    <p>All third parties we work with are required to maintain privacy protections equivalent to those described in this policy.</p>
+  </section>
+
+  <section id="how-we-use-your-data">
+    <h2>4. How We Use Your Data</h2>
+    <p>
+      We use your data solely to provide the Prepp experience — including account access,
+      journaling functionality, and AI-generated summaries and visit agendas. We never sell,
+      rent, or share your data for advertising purposes.
+    </p>
+  </section>
+
+  <section id="ai-features-disclosure">
+    <h2>5. AI Features Disclosure</h2>
+    <p>
+      When you generate a Summary or Visit Agenda within Prepp, the relevant journal entries
+      are transmitted to Anthropic's API for processing in order to generate that content.
+    </p>
+    <p>
+      To protect your privacy, please avoid including sensitive identifying information —
+      such as your full name, date of birth, or Social Security number — directly in your
+      journal entries.
+    </p>
+  </section>
+
+  <section id="voice-and-microphone">
+    <h2>6. Voice &amp; Microphone</h2>
+    <p>
+      Prepp's voice logging feature uses Apple's Speech Recognition framework. Audio may be
+      processed on-device or by Apple's servers, depending on the device and language. Audio
+      is not stored by Prepp.
+    </p>
+    <p>
+      Microphone and speech recognition permissions are required to use this feature.
+    </p>
+  </section>
+
+  <section id="data-retention">
+    <h2>7. Data Retention</h2>
+    <ul>
+      <li>Account and authentication data is deleted upon account deletion.</li>
+      <li>Locally stored journal data is cleared when you log out.</li>
+      <li>
+        You may request deletion of your data at any time by contacting
+        <a href="mailto:support@teamprepp.com">support@teamprepp.com</a>.
+      </li>
+    </ul>
+  </section>
+
+  <section id="user-rights">
+    <h2>8. User Rights</h2>
+    <p>
+      You may access, correct, or delete your data at any time through the app, or by
+      contacting us directly.
+    </p>
+  </section>
+
+  <section id="childrens-privacy">
+    <h2>9. Children's Privacy</h2>
+    <p>
+      Prepp is not intended for use by anyone under the age of 13. We do not knowingly
+      collect data from children under 13.
+    </p>
+  </section>
+
+  <section id="hipaa-disclaimer">
+    <h2>10. HIPAA Disclaimer</h2>
+    <p>
+      Prepp is not a HIPAA covered entity. Journal data is stored locally on your device and
+      is not shared with healthcare providers. Please do not use Prepp as a substitute for
+      your official professional medical records.
+    </p>
+  </section>
+
+  <section id="changes-to-this-policy">
+    <h2>11. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any material changes will be
+      communicated through the app. Continued use of Prepp after such changes constitutes
+      your acceptance of the updated policy.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>12. Contact</h2>
+    <p>
+      If you have any questions about this Privacy Policy, please contact us at
+      <a href="mailto:support@teamprepp.com">support@teamprepp.com</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Last updated: August 2026</p>
+  <p>&copy; 2026 Prepp. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
